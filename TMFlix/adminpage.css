@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #000000;
+  color: white;
+}
+
+
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #daa520;
+}
+
+a.active{
+  background-color: #a0522d;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+.navbar a:hover {
+  background-color: #fffff0;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+
+
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #fffaf0;
+  width:100%;
+
+  
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
